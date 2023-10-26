@@ -10,14 +10,14 @@
       <div class="col-3 p-2">
           <div class="list-group">
               <button
-                  class="list-group-item list-group-item-action btn btn-outline-primary"
+                  class="list-group-item list-group-item-action btn btn-outline-primary m-3 btn-border"
                   (click)="changeCategory()"
               >
                   Home
               </button>
               <ng-container *ngFor="let cat of categories">
                   <button
-                      class="list-group-item list-group-item-action btn btn-outline-primary"
+                      class="list-group-item list-group-item-action btn btn-outline-primary m-3 btn-border"
                       [class.active]="cat === selectedCategory"
                       (click)="changeCategory(cat)"
                   >
@@ -46,7 +46,7 @@
             Add To Cart
           </button>
           <button
-            class="btn btn-success btn-sm float-end m-3"
+            class="btn btn-warning btn-sm float-end m-3 "
             (click)="showProductDetails(product.id)"
           >
             Product Description
@@ -66,7 +66,7 @@
           <option value="8">8 per Page</option>
         </select>
       </div>
-
+      <br>
       <div class="btn-group float-right">
         <button
           *ngFor="let page of pageNumbers"

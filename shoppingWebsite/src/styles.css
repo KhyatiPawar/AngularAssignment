@@ -47,3 +47,8 @@ table.orders table th:first-of-type, table.orders table td:first-of-type {
 {
   color: black !important;;
 }
+.list-group-item-action {
+  border: 2px solid #adb3b9 !important;
+  font-weight: bolder !important;
+
+}
